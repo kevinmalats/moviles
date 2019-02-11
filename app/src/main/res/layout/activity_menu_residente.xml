@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a">
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/imgReservacionClub"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/reserva"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:padding="5dp"/>
+
+            <ImageView
+                android:id="@+id/imgNotificaciones"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                app:srcCompat="@drawable/noticias"
+                android:layout_margin="10dp"
+                android:padding="5dp"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/imgPagoAlicuota"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/pago"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/imgListaInvitados"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/lista"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:padding="5dp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4ff"
+    tools:context="app.arxapp.jonathan.arxap.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lblUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblApellido"
+        android:layout_alignLeft="@+id/lblApellido"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="213dp"
+        android:text="@string/lblCorreo"
+        android:textSize="18dp"
+        android:textColor="#1a1a1a"/>
+
+    <EditText
+        android:id="@+id/txtLoginUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+
+        android:layout_alignStart="@+id/lblUsuario"
+        android:layout_alignLeft="@+id/lblUsuario"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-44dp"
+        android:layout_marginLeft="-44dp"
+        android:layout_marginTop="247dp"
+        android:ems="15"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lblApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/txtLoginClave"
+        android:layout_alignLeft="@+id/txtLoginClave"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="311dp"
+        android:text="@string/lblContraseña"
+        android:textColor="#1a1a1a"
+        android:textSize="18dp" />
+
+
+    <EditText
+        android:id="@+id/txtLoginClave"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="341dp"
+        android:ems="15"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btnIniciar2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/boton_iniciar"
+        android:text="Iniciar Sesion"
+        android:textSize="19dp"
+        android:textColor="#fff"/>
+
+    <com.facebook.login.widget.LoginButton
+
+        android:id="@+id/login_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/lblUsuario"
+        android:layout_toRightOf="@+id/lblUsuario"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/boton_registro"
+        android:text="@string/boton_regsitro"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/correoimg"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblUsuario"
+        android:src="@drawable/correo"
+        android:layout_alignLeft="@+id/txtLoginUsuario" />
+
+    <ImageView
+        android:id="@+id/claveimg"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblApellido"
+        android:src="@drawable/clave"
+        android:layout_alignLeft="@+id/txtLoginClave" />
+
+</RelativeLayout>
